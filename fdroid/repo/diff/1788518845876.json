@@ -1,19 +1,19 @@
 {
   "repo": {
-    "timestamp": 1789134659238
+    "timestamp": 1789382015433
   },
   "packages": {
     "com.tristinbaker.idlefantasy": {
       "metadata": {
-        "lastUpdated": 1789134619678
+        "lastUpdated": 1789381975800
       },
       "versions": {
-        "377fc65b1e9d44b167f0aee57f192c16b37a15e3cd389b8898163b43a0525ca7": {
-          "added": 1789134619678,
+        "599c96fbae877caf33c5d6f0da2896d694acd4d9a38d75f3ad706d0e2bb91500": {
+          "added": 1789381975800,
           "file": {
-            "name": "/com.tristinbaker.idlefantasy_149003.apk",
-            "sha256": "377fc65b1e9d44b167f0aee57f192c16b37a15e3cd389b8898163b43a0525ca7",
-            "size": 10616187
+            "name": "/com.tristinbaker.idlefantasy_149004.apk",
+            "sha256": "599c96fbae877caf33c5d6f0da2896d694acd4d9a38d75f3ad706d0e2bb91500",
+            "size": 10629171
           },
           "manifest": {
             "nativecode": [
@@ -22,8 +22,8 @@
               "x86",
               "x86_64"
             ],
-            "versionName": "1.14.12",
-            "versionCode": 149003,
+            "versionName": "1.14.13",
+            "versionCode": 149004,
             "usesSdk": {
               "minSdkVersion": 26,
               "targetSdkVersion": 35
@@ -55,7 +55,7 @@
             ]
           },
           "whatsNew": {
-            "en-US": "• Fix: the app now removes unreadable oversized sessions written by old versions (e.g. burying thousands of bones before 1.8.6) on startup, ending the permanent crash loop on opening\n• Fix: XP previews on the Home screen queue and worker cards now update live when XP boosts, blessings, or prestige bonuses change, instead of showing the value frozen when the session was queued\n• Fix: the queue end time now includes the remaining runs of an active multi-run dungeon or boss session, instead of coun"
+            "en-US": "• Bannered Feast tokens no longer climb past the feast's token goal\n• Boss fight timers on the Home and Skills screens now match the Combat screen's full-length fight clock\n• Session complete dialogs and queue previews now include prestige XP bonuses, matching the XP actually paid out (no XP was ever lost)\n• Fixed the first tap after scrolling in a bottom sheet being swallowed; sheet content no longer drags the sheet itself, and flinging down from the top of a list still closes it\n• New: choose "
           }
         },
         "83877ff9f65d160a274254ee812a21834d042912599ef8e4ac8fda246110e935": {
