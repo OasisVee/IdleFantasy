@@ -2312,7 +2312,7 @@
     <string name="prestige_effect_crop_rotation_always">Der Fruchtwechselbonus gilt für jede Kultur, ein Fruchtwechsel ist nicht erforderlich.</string>
     <string name="prestige_effect_tool_eff_pct">Werkzeugeffizienz +%1$d%%.</string>
     <string name="prestige_effect_per_level_bonus">+%1$s Werkzeug- oder Kampfbonus pro Stufe dieser Fertigkeit.</string>
-    <string name="prestige_effect_success_chance_pct">Pickpocket success chance +%1$d%%.</string> <!-- untranslated -->
+    <string name="prestige_effect_success_chance_pct">Diebstahl Erfolgschance +%1$d%%.</string>
     <string name="prestige_effect_reclaim_pct">+%1$d%% Chance, verbrauchte Pfeile und Runen nach dem Kampf zurückzubekommen.</string>
     <string name="prestige_effect_heal_pct">Nahrung heilt im Kampf um +%1$d%% mehr.</string>
     <string name="prestige_effect_death_keep_pct">Behalte bei einer Niederlage zusätzlich %1$d%% an EP und Beute.</string>
