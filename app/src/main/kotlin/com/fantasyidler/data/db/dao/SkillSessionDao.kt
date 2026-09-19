@@ -49,7 +49,7 @@ interface SkillSessionDao {
     @Query("DELETE FROM skill_sessions WHERE user_id = 1 AND worker_slot > 0")
     suspend fun deleteAllWorkerSessions()
 
-    // ── Shared ───────────────────────────────────────────────────────────────
+    // ── Shared ──────────────────────────────────────────────────────────────
 
     @Query("SELECT * FROM skill_sessions WHERE user_id = 1")
     suspend fun getAllSessions(): List<SkillSession>
@@ -76,6 +76,13 @@ interface SkillSessionDao {
 
     @Query("DELETE FROM skill_sessions WHERE session_id = :sessionId")
     suspend fun delete(sessionId: String)
+
+    /**
+     * Bulk deletion used by the collect batch. One SQL statement is much faster than
+     * issuing N delete calls when a player completes dozens of queued sessions.
+     */
+    @Query("DELETE FROM skill_sessions WHERE user_id = 1 AND session_id IN (:sessionIds)")
+    suspend fun deleteCompletedSessions(sessionIds: List<String>)
 
     @Query("DELETE FROM skill_sessions")
     suspend fun deleteAll()
