@@ -364,6 +364,18 @@ class SessionRepository @Inject constructor(
         pruneMirrorStamps()
     }
 
+    /**
+     * Collection batches can contain dozens of completed sessions. Delete them in a
+     * single bulk statement, then prune mirror targets once, instead of repeating the
+     * full-session scan for every row.
+     */
+    suspend fun deleteSessions(sessionIds: List<String>) {
+        if (sessionIds.isEmpty()) return
+        for (sessionId in sessionIds) cancelAlarm(sessionId)
+        sessionDao.deleteCompletedSessions(sessionIds)
+        pruneMirrorStamps()
+    }
+
     suspend fun deleteAllSessions() {
         sessionDao.deleteAll()
         pruneMirrorStamps()
